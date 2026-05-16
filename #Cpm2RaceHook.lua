@@ -286,6 +286,7 @@ racing = gg.choice({
     '〇 | Dumb Enemies',
     '〇 | Hook All Penaltys',
     '〇 | Teleport Patch',
+    '〇 | Active All',
     '[[Back Menu]]'
     
  }, nil, (os.date([[
@@ -309,6 +310,9 @@ Today: %m/%d/%y
       racing4()
     end 
     if racing == 5 then
+    activeall()
+    end
+    if racing == 6 then
       Main()
     end
   end 
@@ -510,6 +514,13 @@ gg.alert'Auto Win Actived✅\n Run until you reach the halfway point of the race
 gg.toast'Auto Win Race Actived ✅'
 end
 
+function activeall()
+    racing1()
+    racing2()
+    racing3()
+    racing4()
+gg.toast'All Function Actived ✅'
+end
 
 
 function lemans1()
